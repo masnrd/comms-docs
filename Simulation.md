@@ -9,7 +9,7 @@ In [PX4](./PX4.md), simulation can be:
 For now, I'm working with [jMAVSim](./jMAVSim.md) for basic testing, but I'll probably have to transition to Gazebo if I want to test with anything other than a flat plane.
 
 # SITL
-![PX4 SITL Communication](./img/PX4 SITL Communication.svg)
+![PX4 SITL Communication](./img/PX4%20SITL%20Communication.svg)
 
 The direct communication between the simulator (jMAVSim, Gazebo, etc) and PX4 on SITL is TCP port 4560. This shouldn't be important.
 - This is over MAVLink unless the simulator is Gazebo, but this really isn't important (I think).
