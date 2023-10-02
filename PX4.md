@@ -12,21 +12,21 @@ In general, this has two main layers:
 See [this link](https://docs.px4.io/main/en/dev_setup/dev_env.html).
 
 # Architecture
-![PX4 Architecture]("./img/PX4 Architecture (FC).svg")
+![PX4 Architecture](./img/PX4%20Architecture%20(FC).svg)
 - **Flight Controller**: Runs the PX4 flight stack, contains internal IMUs, compasses and barometers. Our flight controller is a [*Pixhawk 6C*](https://docs.px4.io/main/en/flight_controller/pixhawk6c.html).
 - **Telemetry Radio**: For connecting to a ground station.
 - **Sensors**: Connected via I2C, SPI, CAN or UART
-- **Ground Station**: Typically runs QGroundControl, and is connected via [MavLink]("./MAVLink.md").
+- **Ground Station**: Typically runs QGroundControl, and is connected via [MavLink](./MAVLink.md).
 
-A **mission computer** (or a *companion computer*) can be connected to the drone, and communicates with the flight controller via [MavLink]("./MAVLink.md").
+A **mission computer** (or a *companion computer*) can be connected to the drone, and communicates with the flight controller via [MavLink](./MAVLink.md).
 
 ## Software Architecture
 Within the flight controller, communication is done between modules with a **publish-subscribe** message bus called **uORB**.
 
 # Simulation
 PX4 supports both *software-in-the-loop* (SITL) and *hardware-in-the-loop* simulation.
-- See [jMAVSim]("./jMAVSim.md") for such a simulator.
-- See [Simulation]("./Simulation.md") for more details.
+- See [jMAVSim](./jMAVSim.md) for such a simulator.
+- See [Simulation](./Simulation.md) for more details.
 
 # Firmware Development
 In general, builds for the desired target (including simulated drone) is done with:
